@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us - The Ethereal Wardrobe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="container">
+        <nav role="navigation" aria-label="Primary">
+            <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+                <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height: 50px;"/> <!-- Logo Image -->
+            </a>
+            <ul>
+                <li><a href="../index.html" tabindex="0">Home</a></li>
+                <li><a href="../categories/accessories.html" tabindex="0">Accessories</a></li>
+                <li><a href="../categories/bottoms.html" tabindex="0">Bottoms</a></li>
+                <li><a href="../categories/dresses.html" tabindex="0">Dresses</a></li>
+                <li><a href="../categories/tops.html" tabindex="0">Tops</a></li>        
+                <li><a href="../newspaper/index.html" tabindex="0" aria-current="page">Newsletter</a></li>
+                <li><a href="contact/index.html" tabindex="0">Contact</a></li>
+            </ul>
+            <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below.</p>
+        </div>
+        <form class="contact-form" id="contact-form" aria-live="polite" aria-relevant="additions">
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name" />
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+            <button type="submit" aria-label="Send Message">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: support@etherealwardrobe.com</p>
+            <p>Phone: +1 (234) 567-8901</p>
+            <p>Address: 123 Fashion St, Style City, SC 12345</p>
+        </div>
+    </div>
+</main>
+
+<footer role="contentinfo" id="contact" class="container">
+    <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+    <div class="social-links" role="list" aria-label="Social media links">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem" >&#x1F426;</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+        <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Bottoms - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="../product/index.html" tabindex="0">Products</a></li>
+        <li><a href="accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="tops.html" tabindex="0">Tops</a></li>
+        <li><a href="../newspaper/index.html" tabindex="0">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="category-hero" role="banner" aria-label="Bottoms category hero banner">
+    <div class="container">
+      <h1>Bottoms</h1>
+      <p>Shop our collection of stylish bottoms, from jeans to skirts and trousers.</p>
+    </div>
+  </section>
+
+  <section class="container products-section" aria-label="Bottoms products">
+    <h2 class="products-header" tabindex="0">Featured Bottoms</h2>
+    <div class="products" role="list">
+      <article class="product-card" role="listitem" aria-label="Product: Classic Blue Jeans, Price ₹2100">
+        <img src="https://m.media-amazon.com/images/I/51vdJi-JR8L._AC_UY1100_.jpg" alt="Classic blue jeans" />
+        <div class="product-info">
+          <div class="product-title">Classic Blue Jeans</div>
+          <div class="product-price">₹2100</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Classic Blue Jeans to cart" onclick="addToCart('Classic Blue Jeans')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Black Pencil Skirt, Price ₹1800">
+        <img src="https://images.meesho.com/images/products/83083557/dqvjy_512.webp" alt="Black pencil skirt" />
+        <div class="product-info">
+          <div class="product-title">Black Pencil Skirt</div>
+          <div class="product-price">₹1800</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Black Pencil Skirt to cart" onclick="addToCart('Black Pencil Skirt')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Casual Shorts, Price ₹27.99">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shopsy-short/s/j/s/xs-ssh103a-high-waist-shorts-winered-women-original-imaghmgbhzsqwjkh.jpeg?q=90&crop=false" alt="Casual shorts" />
+        <div class="product-info">
+          <div class="product-title">Casual Shorts</div>
+          <div class="product-price">₹27.99</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Casual Shorts to cart" onclick="addToCart('Casual Shorts')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Floral Skirt, Price ₹1300">
+        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2025/APRIL/22/60F82svf_ec9b754301404cea926940e7aed37d58.jpg" alt="Floral skirt" />
+        <div class="product-info">
+          <div class="product-title">Floral Skirt</div>
+          <div class="product-price">₹1300</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Floral Skirt to cart" onclick="addToCart('Floral Skirt')">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

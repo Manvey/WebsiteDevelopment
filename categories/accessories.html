@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Accessories - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="../product/index.html" tabindex="0">Products</a></li>
+        <li><a href="accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="tops.html" tabindex="0">Tops</a></li>
+        <li><a href="../newspaper/index.html" tabindex="0">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="category-hero" role="banner" aria-label="Accessories category hero banner">
+    <div class="container">
+      <h1>Accessories</h1>
+      <p>Complete your look with our collection of stylish accessories.</p>
+    </div>
+  </section>
+
+  <section class="container products-section" aria-label="Accessories products">
+    <h2 class="products-header" tabindex="0">Featured Accessories</h2>
+    <div class="products" role="list">
+      <article class="product-card" role="listitem" aria-label="Product: Classic Black Handbag, Price ₹9999">
+        <a href="product.html?product=classic_black_handbag">
+          <img src="https://www.chanel.com/images///f_auto,q_auto:good,dpr_1.1/w_3200/-9543207026718.jpg%203200w" alt="Classic black handbag" />
+          <div class="product-info">
+            <div class="product-title">Classic Black Handbag</div>
+            <div class="product-price">₹9999</div>
+          </div>
+        </a>
+        <button class="add-to-cart-btn" aria-label="Add Classic Black Handbag to cart" onclick="addToCart('Classic Black Handbag')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Summer Sunglasses, Price ₹800">
+        <a href="product.html?product=summer_sunglasses">
+          <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11627278/2025/2/17/ffdf370b-ad61-4d28-8f16-1179020653eb1739793352599-ROYAL-SON-Women-Oversized-UV-Protected-Sunglasses-CHI0096-C1-1.jpg" alt="Summer sunglasses" />
+          <div class="product-info">
+            <div class="product-title">Summer Sunglasses</div>
+            <div class="product-price">₹800</div>
+          </div>
+        </a>
+        <button class="add-to-cart-btn" aria-label="Add Summer Sunglasses to cart" onclick="addToCart('Summer Sunglasses')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Elegant Scarf, Price ₹1200">
+        <a href="product.html?product=elegant_scarf">
+          <img src="https://m.media-amazon.com/images/I/61kHh31f7CL._AC_UY1100_.jpg" alt="Elegant scarf" />
+          <div class="product-info">
+            <div class="product-title">Elegant Scarf</div>
+            <div class="product-price">₹1200</div>
+          </div>
+        </a>
+        <button class="add-to-cart-btn" aria-label="Add Elegant Scarf to cart" onclick="addToCart('Elegant Scarf')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Leather Belt, Price ₹999">
+        <a href="product.html?product=leather_belt">
+          <img src="https://m.media-amazon.com/images/I/71wKRcBcaEL._AC_UY1100_.jpg" alt="Leather belt" />
+          <div class="product-info">
+            <div class="product-title">Leather Belt</div>
+            <div class="product-price">₹999</div>
+          </div>
+        </a>
+        <button class="add-to-cart-btn" aria-label="Add Leather Belt to cart" onclick="addToCart('Leather Belt')">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

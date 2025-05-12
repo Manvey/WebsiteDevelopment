@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Tops - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="../product/index.html" tabindex="0">Products</a></li>
+        <li><a href="accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="tops.html" tabindex="0">Tops</a></li>
+        <li><a href="../newspaper/index.html" tabindex="0">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="category-hero" role="banner" aria-label="Tops category hero banner">
+    <div class="container">
+      <h1>Tops</h1>
+      <p>Explore a variety of stylish tops perfect for every occasion.</p>
+    </div>
+  </section>
+
+  <section class="container products-section" aria-label="Tops products">
+    <h2 class="products-header" tabindex="0">Featured Tops</h2>
+    <div class="products" role="list">
+      <article class="product-card" role="listitem" aria-label="Product: Casual White Shirt, Price ₹800">
+        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/27558846/2024/2/13/d901853b-5055-413e-abbf-6341d06e813a1707819004679SASSAFRASWomenOpaqueCasualShirt1.jpg" alt="Casual white shirt" />
+        <div class="product-info">
+          <div class="product-title">Casual White Shirt</div>
+          <div class="product-price">₹800</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Casual White Shirt to cart" onclick="addToCart('Casual White Shirt')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Blue Denim Top, Price ₹1200">
+        <img src="https://m.media-amazon.com/images/I/81ktJWBK+HL._AC_UY1100_.jpg" alt="Blue denim top" />
+        <div class="product-info">
+          <div class="product-title">Blue Denim Top</div>
+          <div class="product-price">₹1200</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Blue Denim Top to cart" onclick="addToCart('Blue Denim Top')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Floral Sleeveless Top, Price ₹999">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20230628/4i5Z/649c4a27a9b42d15c915e766/-1117Wx1400H-443019393-offwhite-MODEL.jpg" alt="Floral sleeveless top" />
+        <div class="product-info">
+          <div class="product-title">Floral Sleeveless Top</div>
+          <div class="product-price">₹999</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Floral Sleeveless Top to cart" onclick="addToCart('Floral Sleeveless Top')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Off-Shoulder Pink Top, Price ₹1400">
+        <img src="https://images.bestsellerclothing.in/data/only/07-nov-2024/901066701_g0.jpg?width=1080&height=1355&mode=fill&fill=blur&format=auto" alt="Off-Shoulder pink top" />
+        <div class="product-info">
+          <div class="product-title">Off-Shoulder Pink Top</div>
+          <div class="product-price">₹1400</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Off-Shoulder Pink Top to cart" onclick="addToCart('Off-Shoulder Pink Top')">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Floral White Dress - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="index.html" tabindex="0">Product</a></li>
+        <li><a href="../categories/tops.html" tabindex="0">Tops</a></li>
+        <li><a href="../categories/dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="../categories/bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="../categories/accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="../newspaper/index.html" tabindex="0">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main class="product-page" role="main">
+  <div class="product-container">
+    <div class="product-image">
+      <img src="../images/floral.png" alt="Floral White Dress" />
+    </div>
+    <div class="product-details">
+      <h1>Floral White Dress</h1>
+      <div class="product-price">$49.99</div>
+      <p class="product-desc">
+        A beautiful, flowy white dress with floral patterns, perfect for summer days and special occasions. Made with breathable fabric for all-day comfort.
+      </p>
+      <div class="form-group">
+        <label for="size-select">Select Size</label>
+        <select id="size-select" aria-label="Select dress size">
+          <option value="">Choose a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity-input">Quantity</label>
+        <input type="number" id="quantity-input" min="1" max="10" value="1" aria-label="Select quantity" />
+      </div>
+      <button class="add-to-cart-btn" aria-label="Add Floral White Dress to cart">Add to Cart</button>
+    </div>
+  </div>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

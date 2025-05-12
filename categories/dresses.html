@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Dresses - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="../index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="../product/index.html" tabindex="0">Products</a></li>
+        <li><a href="accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="tops.html" tabindex="0">Tops</a></li>
+        <li><a href="../newspaper/index.html" tabindex="0">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="category-hero" role="banner" aria-label="Dresses category hero banner">
+    <div class="container">
+      <h1>Dresses</h1>
+      <p>Discover our elegant and trendy dresses for every occasion.</p>
+    </div>
+  </section>
+
+  <section class="container products-section" aria-label="Dresses products">
+    <h2 class="products-header" tabindex="0">Featured Dresses</h2>
+    <div class="products" role="list">
+      <article class="product-card" role="listitem" aria-label="Product: Elegant Red Dress, Price ₹4100">
+        <img src="https://i.etsystatic.com/28781389/r/il/61c444/3142115980/il_fullxfull.3142115980_3m9e.jpg" alt="Elegant red dress" />
+        <div class="product-info">
+          <div class="product-title">Elegant Red Dress</div>
+          <div class="product-price">₹4100</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Elegant Red Dress to cart" onclick="addToCart('Elegant Red Dress')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Summer Maxi Dress, Price ₹1799">
+        <img src="https://www.alamodelabel.in/cdn/shop/files/IMG-20250121-WA0047.jpg?v=1738395201" alt="Summer maxi dress" />
+        <div class="product-info">
+          <div class="product-title">Summer Maxi Dress</div>
+          <div class="product-price">₹1799</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Summer Maxi Dress to cart" onclick="addToCart('Summer Maxi Dress')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Cocktail Black Dress, Price ₹2500">
+        <img src="https://littleboxindia.com/cdn/shop/products/a14c12ffc23ad564a90ecbd0679dcda1.jpg?v=1740749580" alt="Cocktail black dress" />
+        <div class="product-info">
+          <div class="product-title">Cocktail Black Dress</div>
+          <div class="product-price">₹2500</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Cocktail Black Dress to cart" onclick="addToCart('Cocktail Black Dress')">Add to Cart</button>
+      </article>
+      <article class="product-card" role="listitem" aria-label="Product: Floral Midi Dress, Price ₹1900">
+        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29997696/2024/6/19/479a495c-40a1-43bc-affd-734c96523be21718810055994StylumFloralPrintA-LineMidiDress1.jpg" alt="Floral midi dress" />
+        <div class="product-info">
+          <div class="product-title">Floral Midi Dress</div>
+          <div class="product-price">₹1900</div>
+        </div>
+        <button class="add-to-cart-btn" aria-label="Add Floral Midi Dress to cart" onclick="addToCart('Floral Midi Dress')">Add to Cart</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

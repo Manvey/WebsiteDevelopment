@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>The Ethereal Wardrobe - Women's Fashion Hub</title>
+<link rel="stylesheet" href="index_style.css">
+<style>
+  /* Additional styles for dropdown */
+  nav ul {
+      position: relative;
+  }
+
+  .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+      margin-top: 10px;
+      border-radius: 4px;
+  }
+
+  nav li:hover .dropdown {
+      display: block;
+  }
+
+  .dropdown li {
+      list-style: none;
+      padding: 10px 15px;
+  }
+
+  .dropdown li a {
+      color: #444;
+      text-decoration: none;
+  }
+
+  .dropdown li a:hover {
+      background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="container">
+        <nav role="navigation" aria-label="Primary">
+            <a href="#" class="logo" aria-label="The Ethereal Wardrobe Logo">
+                <img src="images/logo.png" alt="The Ethereal Wardrobe Logo" style="height: 50px;"/> <!-- Logo Image -->
+            </a>
+            <ul>
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="product/index.html" tabindex="0">Products</a></li>
+                <li><a href="categories/accessories.html" tabindex="0">Accessories</a></li>
+                <li><a href="categories/bottoms.html" tabindex="0">Bottoms</a></li>
+                <li><a href="categories/dresses.html" tabindex="0">Dresses</a></li>
+                <li><a href="categories/tops.html" tabindex="0">Tops</a></li>
+                <li><a href="newspaper/index.html" tabindex="0">Newsletter</a></li>
+                <li><a href="contact/index.html" tabindex="0">Contact</a></li>
+            </ul>
+            <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="home" role="banner" aria-label="Hero banner showcase">
+        <div>
+            <h1>Step Into The New Season In Style</h1>
+            <p>Refresh your wardrobe with latest women's fashion collections</p>
+            <button onclick="alert('Shop Now clicked!')">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="categories" class="container categories" aria-label="Product categories">
+        <article tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Explore Tops">
+            <img src="images/tops.png" alt="Fashionable women tops">
+            <div class="category-name">Tops</div>
+        </article>
+        <article tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Explore Dresses">
+            <img src="images/dresses.png" alt="Elegant women dresses">
+            <div class="category-name">Dresses</div>
+        </article>
+        <article tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Explore Bottoms">
+            <img src="images/bottoms.png" alt="Women wearing bottoms">
+            <div class="category-name">Bottoms</div>
+        </article>
+        <article tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Explore Accessories">
+            <img src="images/accessories.png" alt="Women accessories">
+            <div class="category-name">Accessories</div>
+        </article>
+    </section>
+
+    <section class="promo-banner" role="region" aria-labelledby="promo-title">
+        <h2 id="promo-title">Summer Sale - Up to 60% OFF!</h2>
+        <p>Refresh your wardrobe with the hottest styles this summer. Limited time offer on dresses, tops, and more.</p>
+        <button onclick="alert('Explore Sale Clicked!')">Shop Sale</button>
+    </section>
+
+    <section id="products" class="container products-section" aria-label="Featured products">
+        <h2 class="products-header" tabindex="0">Featured Products</h2>
+        <div class="products" role="list">
+            <article class="product-card" role="listitem" aria-label="Product: Floral White Dress, Price $49.99">
+                <img src="images/floral.png" alt="Floral white dress" />
+                <div class="product-info">
+                    <div class="product-title">Floral White Dress</div>
+                    <div class="product-price">₹49.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Floral White Dress to cart" onclick="addToCart('Floral White Dress')">Add to Cart</button>
+            </article>
+            <article class="product-card" role="listitem" aria-label="Product: Casual Blue Top, Price ₹29.99">
+                <img src="images/blue_top.png" alt="Casual blue top" />
+                <div class="product-info">
+                    <div class="product-title">Casual Blue Top</div>
+                    <div class="product-price">₹29.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Casual Blue Top to cart" onclick="addToCart('Casual Blue Top')">Add to Cart</button>
+            </article>
+            <article class="product-card" role="listitem" aria-label="Product: Elegant Cocktail Dress, Price ₹79.99">
+                <img src="images/cocktail.png" alt="Elegant cocktail dress" />
+                <div class="product-info">
+                    <div class="product-title">Elegant Cocktail Dress</div>
+                    <div class="product-price">₹79.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Elegant Cocktail Dress to cart" onclick="addToCart('Elegant Cocktail Dress')">Add to Cart</button>
+            </article>
+            <article class="product-card" role="listitem" aria-label="Product: Trendy Pink Skirt, Price ₹39.99">
+                <img src="images/pink_skirt.png" alt="Trendy pink skirt" />
+                <div class="product-info">
+                    <div class="product-title">Trendy Pink Skirt</div>
+                    <div class="product-price">₹39.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Trendy Pink Skirt to cart" onclick="addToCart('Trendy Pink Skirt')">Add to Cart</button>
+            </article>
+            <article class="product-card" role="listitem" aria-label="Product: Classic Black Handbag, Price ₹59.99">
+                <img src="images/bag.png" alt="Classic black handbag" />
+                <div class="product-info">
+                    <div class="product-title">Classic Black Handbag</div>
+                    <div class="product-price">₹59.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Classic Black Handbag to cart" onclick="addToCart('Classic Black Handbag')">Add to Cart</button>
+            </article>
+            <article class="product-card" role="listitem" aria-label="Product: Summer Sunglasses, Price ₹19.99">
+                <img src="images/sunglasses.png" alt="Summer sunglasses" />
+                <div class="product-info">
+                    <div class="product-title">Summer Sunglasses</div>
+                    <div class="product-price">₹19.99</div>
+                </div>
+                <button class="add-to-cart-btn" aria-label="Add Summer Sunglasses to cart" onclick="addToCart('Summer Sunglasses')">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="newsletter-section container" id="newsletter" aria-label="Newsletter subscription">
+        <h3 tabindex="0">Stay Updated with Latest Offers</h3>
+        <form class="newsletter-form" id="newsletter-form" aria-live="polite" aria-relevant="additions">
+            <input 
+                type="email" 
+                id="newsletter-email" 
+                aria-label="Email address for newsletter subscription" 
+                placeholder="Enter your email" 
+                required 
+                autocomplete="email" />
+            <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+        </form>
+    </section>
+</main>
+
+<footer role="contentinfo" id="contact" class="container">
+    <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+    <div class="social-links" role="list" aria-label="Social media links">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem" >&#x1F426;</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+        <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+    </div>
+</footer>
+<script src="index_script.js"></script>
+</body>
+</html>

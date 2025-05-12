@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Newsletter Subscription - The Ethereal Wardrobe</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="container">
+    <nav role="navigation" aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="The Ethereal Wardrobe Logo">
+        <img src="../images/logo.png" alt="The Ethereal Wardrobe Logo" style="height:50px;" />
+      </a>
+      <ul>
+        <li><a href="../index.html" tabindex="0">Home</a></li>
+        <li><a href="../categories/accessories.html" tabindex="0">Accessories</a></li>
+        <li><a href="../categories/bottoms.html" tabindex="0">Bottoms</a></li>
+        <li><a href="../categories/dresses.html" tabindex="0">Dresses</a></li>
+        <li><a href="../categories/tops.html" tabindex="0">Tops</a></li>        
+        <li><a href="newsletter.html" tabindex="0" aria-current="page">Newsletter</a></li>
+        <li><a href="../contact/index.html" tabindex="0">Contact</a></li>
+      </ul>
+      <label for="menu-toggle" aria-label="Toggle menu"><span></span></label>
+    </nav>
+  </div>
+</header>
+
+<main class="newsletter-page" role="main" aria-labelledby="newsletter-title">
+  <h1 id="newsletter-title">Subscribe to Our Newsletter</h1>
+  <p>Get exclusive updates, offers, and style tips delivered straight to your inbox.</p>
+  <form id="newsletter-form" novalidate aria-live="polite" aria-relevant="additions" role="form">
+    <input
+      type="email"
+      id="newsletter-email"
+      name="email"
+      aria-label="Email address for newsletter subscription"
+      placeholder="Enter your email"
+      required
+      autocomplete="email"
+    />
+    <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+  </form>
+</main>
+
+<footer role="contentinfo" class="container">
+  <div>© 2025 The Ethereal Wardrobe. All rights reserved.</div>
+  <div class="social-links" role="list" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" role="listitem">&#x1F426;</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" role="listitem">&#x1F426;</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">&#x1F426;</a>
+    <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" role="listitem">&#x1F426;</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
